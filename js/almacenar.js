@@ -9,7 +9,7 @@ let listado = JSON.parse(localStorage.getItem("listado")) || [];
 
 // Función para renderizar la lista en el DOM
 function renderizar() {
-  contenedor.innerHTML = ""; // limpiamos primero
+  contenedor.innerHTML = ""; // primero limpiamos
   listado.forEach((elemento, i) => {
     const li = document.createElement("li");
     li.classList.add("list-group-item");
